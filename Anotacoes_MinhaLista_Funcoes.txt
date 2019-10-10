@@ -1,0 +1,37 @@
+Prova Excel definida para o dia 03/10
+Prova Algoritmos definida para o dia 01/10
+
+Funções Excel
+
+Função =INT($B$13) 
+Retorna a parte inteira de qualquer número
+
+Função =MOD(7;2) ou =MOD($A$15;3) //retorna 1
+Retorna o resto de uma divisão. O módulo.
+
+Função =Truncar(7/3;3) ou
+Retorna o número com um quantidade de ca
+
+Funções =ARRED() e também =ARRED.PRACIMA() e também =ARRED.PRABAIXO()
+
+Guia - Página Inical
+Menu - Número
+Opções Aumentar casas decimais e Diminuir casa decimais alteram apenas a visualização do número na célula. Para efeito de cálculo o número conserva até 50 casas decimais.
+
+Função =SOLVER()
+Serve para dissolver. O solver só funcionará se tiver uma somatória. Célula objetivo contém a somatória, Valor de: deve ser digitado a meta, Alterando células variáveis: deve conter o intervalo em que os valores serão dissolvidos. Sujeito a restrições acrescenta restrições.
+Precisa habilitar no menu Dados guia Análise. Para habilitar navegue até Arquivo -> Opções -> Suplementos -> Ir... -> Solver
+
+Filtro
+Menu Dados -> Guia Classificar e Filtrar -> Filtro. Deve clicar somente em uma célula da extrema esquerda que vai puxar um filtro horizontalmente. Se der erro verifique tentar pular uma linha.
+
+Função =SUBTOTAL()
+Essa função só funciona se o filtro estiver classificado. Guia Estrutura de Tópicos -> Subtotal.
+
+Tabela dinâmica
+Menu Inserir -> Guia Tabelas -> Tabela Dinâmica. Sectograma vc possui apenas uma linha. Com duas linhas ou mais vc precisa de uma gráfico de colunas. Recomendo o 3D agrupado.
+
+Função =PROCH()
+Semelhante ao Procv(), ao invés de pesquisar com um índice baseado em colunas, nosso índice será baseado em linhas
+
+Acho bom não esquecer que a função =CORRESP() só aceita uma linha ou uma coluna como intervalo.

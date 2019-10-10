@@ -1,0 +1,40 @@
+Se PJ - 5,5%
+Se PF preço normal
+SE(B7="Pessoa Física"; PROCH(B8;A18:C26;2;0)*(B11-B9)+PROCV())
+- 
+x (Data de entrega - Data da retirada)
++ O total de km rodados
+
+
+Q1)
+=(PROCV(B8;A19:C26;2;0)+PROCV(B8;A19:C26;3;0)*(B12-10))*SE(B7="Pessoa Jurídica";94.5%;100%) * SE(B11-B9>10;93.5%;100%)
+
+Clica na seta verde do A1 e vai em formatar células,
+janela bloqueada e desmarca da ok
+Em seguida clica na  celula que quer bloquear
+Depois vai na aba Revisão e no menu Alterações clique em proteger planilha. Não altere os parâmetros a menos que saiba o que estpa fazendo, insira uma senha repita e hit Enter.
+
+
+Mercadoria = B2
+Quantidade = D2
+Transporte = C2
+
+(Transporte * Qtd) =PROCV(C2;$E$14:$F$16;2;0)*D2
+(Produto * Qtd) =PROCV(B2;$A$14:$B$16;2;0)*D2
+
+Quando Qtd > 200
+
++PROCV(C2;$E$14:$F$16;2;0)*INT(D2/200)+SE(MOD(D2;200)>0;1;0)
+
+Concatenando
+=c2&b2
+
+=somase($G$2:$G$11;$I$2&$J$2;$E$2:$E$11)
+
+Q2)
+=(PROCV(B2;$A$14:$B$16;2;0)*D2+SE(D2>200;D2*PROCV(C2;E14:F16;2;0)+D2;D2*PROCV(C2;E14:F16;2;0))
+
+PROCV(C2;E14:F16;2;0)
+
+Q6)
+=SE(B2="individual";PROCV(B3;$A$10:$N$20;CORRESP(B4;$A$10:$E$10;0)+SE(B1=$G$8;6;SE(B1=$L$8;11;0));0);PROCV(B3;$A$23:$N$33;CORRESP(B4;$A$10:$E$10;0)+SE(B1=$G$8;6;SE(B1=$L$8;11;0));0))
